@@ -11,5 +11,3 @@
 
 !/.config/kitty
 !/.config/kitty/**
-
-!/.oh-my-zsh/custom/themes/**
