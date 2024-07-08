@@ -11,3 +11,6 @@
 
 !/.config/kitty
 !/.config/kitty/**
+
+!/.oh-my-zsh
+!/.oh-my-zsh/**
