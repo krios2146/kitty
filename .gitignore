@@ -1,0 +1,10 @@
+*
+!/.zshrc
+!/.gitconfig
+!/.gitignore
+!/.tmux.conf
+
+!/.config
+
+!/.config/kitty
+!/.config/kitty/*
