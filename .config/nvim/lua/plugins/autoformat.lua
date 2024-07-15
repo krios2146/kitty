@@ -12,6 +12,7 @@ return {
         typescript = { 'prettier' },
         vue = { 'prettier' },
         python = { 'black' },
+        go = { 'goimports' },
       },
     },
   },
