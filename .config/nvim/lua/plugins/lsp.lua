@@ -30,6 +30,13 @@ local function get_servers()
         },
       },
     },
+    gopls = {
+      usePlaceholder = true,
+      analyses = {
+        unusedvariable = true,
+      },
+    },
+    harper_ls = {},
   }
 end
 
@@ -41,6 +48,7 @@ local function get_tools()
     'eslint_d',
     'black',
     'mypy',
+    'goimports',
   }
 end
 
