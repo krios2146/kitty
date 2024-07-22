@@ -12,3 +12,6 @@
 
 !/.config/kitty
 !/.config/kitty/**
+
+!/.ssh
+!/.ssh/config
