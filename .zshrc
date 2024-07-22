@@ -23,7 +23,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$JAVA_HOME/bin"
 
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias df='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(ssh-agent -s)" > /dev/null 2>&1
