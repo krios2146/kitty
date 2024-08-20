@@ -73,6 +73,8 @@ local function map_keys(event)
   map_lsp('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
   map_lsp('K', vim.lsp.buf.hover, 'Hover Documentation')
   map_lsp('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
+
+  vim.keymap.set('i', '<C-s>', vim.lsp.buf.signature_help, { buffer = event.buf, desc = 'LSP: Signature [H]elp' })
 end
 
 -- Installing servers with Mason
