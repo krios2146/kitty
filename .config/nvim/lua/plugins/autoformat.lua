@@ -13,6 +13,7 @@ return {
         vue = { 'prettier' },
         python = { 'black' },
         go = { 'goimports' },
+        ocaml = { 'ocamlformat' },
       },
     },
   },

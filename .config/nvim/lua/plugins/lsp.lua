@@ -37,6 +37,7 @@ local function get_servers()
       },
     },
     harper_ls = {},
+    ocamllsp = {},
   }
 end
 
@@ -49,6 +50,7 @@ local function get_tools()
     'black',
     'mypy',
     'goimports',
+    'ocamlformat',
   }
 end
 
