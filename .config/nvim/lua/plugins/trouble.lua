@@ -10,7 +10,7 @@ return {
       end, { desc = '[W]orkspace [D]iagnostics' })
 
       vim.keymap.set('n', '<leader>dd', function()
-        require('trouble').toggle 'document_diagnostics'
+        require('trouble').toggle 'diagnostics'
       end, { desc = '[D]ocument [Diagnostics]' })
     end,
   },
