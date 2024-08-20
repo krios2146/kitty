@@ -33,3 +33,28 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh";
 if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then
     . "${___MY_VMOPTIONS_SHELL_FILE}"; 
 fi
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/krios2146/.dart-cli-completion/zsh-config.zsh ]] && . /home/krios2146/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/krios2146/.opam/opam-init/init.zsh' ]] || source '/home/krios2146/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# bun completions
+[ -s "/home/krios2146/.bun/_bun" ] && source "/home/krios2146/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
