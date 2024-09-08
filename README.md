@@ -4,7 +4,7 @@
 > Clone to the .dotfiles directory with --bare flag, not to the home directory
 >
 > ```bash
-> git clone --bare https://github.com/username/dotfiles.git $HOME/.dotfiles
+> git clone --bare git@github.com:krios2146/.dotfiles.git $HOME/.dotfiles
 > ```
 
 ## Neovim
