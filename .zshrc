@@ -9,6 +9,10 @@ plugins=(
     virtualenv
     docker
     python
+    archlinux
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    fast-syntax-highlighting
 )
 
 export PYTHON_AUTO_VRUN=true
