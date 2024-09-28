@@ -16,7 +16,7 @@ local function get_servers()
         vue = { hybridMode = false },
       },
     },
-    tsserver = {},
+    ts_ls = {},
     tailwindcss = {},
     ltex = {},
     basedpyright = {
