@@ -40,9 +40,15 @@ end
 -- For some reason documented variant of integration of Trouble and Telescope isn't working
 -- Error Trouble v.2 = paths to the files duplicates
 -- Trouble v.3 just don't work, no errors, no files shown
-local function open_with_trouble(opts)
-  require('telescope.actions').send_to_qflist(opts)
-  vim.cmd 'Trouble quickfix' -- Should be with `cmd`. Navigation won't work if opened differently
+
+-- local function open_with_trouble(opts)
+--   require('telescope.actions').send_to_qflist(opts)
+--   vim.cmd 'Trouble quickfix' -- Should be with `cmd`. Navigation won't work if opened differently
+-- end
+
+local function open_with_trouble()
+  local trouble_telescope = require 'trouble.sources.telescope'
+  return trouble_telescope.open
 end
 
 return {
@@ -60,8 +66,8 @@ return {
             },
           },
           mappings = { -- Change default qflist to the Trouble
-            i = { ['<M-q>'] = open_with_trouble },
-            n = { ['<M-q>'] = open_with_trouble },
+            i = { ['<M-q>'] = require('trouble.sources.telescope').open },
+            n = { ['<M-q>'] = require('trouble.sources.telescope').open },
           },
         },
         pickers = {
