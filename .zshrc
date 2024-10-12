@@ -28,6 +28,8 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$JAVA_HOME/bin"
 
 alias df='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dbw='dune build -w'
+alias dt='dune runtest'
 
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(ssh-agent -s)" > /dev/null 2>&1
