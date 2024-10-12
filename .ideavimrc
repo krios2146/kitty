@@ -1,0 +1,25 @@
+let mapleader=" "
+
+set scrolloff=5
+set incsearch
+set NERDTree
+
+map <leader>so <Action>(RecentFiles)
+map <leader>sf <Action>(GotoFile)
+map <leader>mp <Action>(ManageRecentProjects)
+map <leader>gi <Action>(VcsGroups)
+map <leader>d <Action>(ToggleLineBreakpoint)
+map <leader>rn <Action>(RenameElement)
+map <leader>pv :NERDTreeToggle<CR>
+map <C-u> <C-u>zz
+map <C-d> <C-d>zz
+
+vmap <S-k> <Action>(MoveLineUp)
+vmap <S-j> <Action>(MoveLineDown)
+map <leader>p "_dP
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
