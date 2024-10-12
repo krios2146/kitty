@@ -8,10 +8,7 @@ return {
         section_separators = { left = '', right = '' },
       },
       sections = {
-        lualine_x = {
-          { 'datetime', style = '%H:%M:%S' },
-          'filetype',
-        },
+        lualine_x = { 'filetype' },
       },
       extensions = { 'fugitive', 'trouble', 'lazy', 'mason', 'nvim-tree' },
     },
