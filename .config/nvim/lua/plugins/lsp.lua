@@ -153,7 +153,7 @@ return {
         sign define DiagnosticSignHint text= linehl= texthl=DiagnosticSignHint numhl= 
       ]]
 
-      -- Show most severe diagnostic first if there are more then one of them
+      -- Show most severe diagnostic first if there are more than one of them
       vim.diagnostic.config {
         severity_sort = true,
       }
