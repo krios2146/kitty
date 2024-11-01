@@ -68,6 +68,8 @@ local function map_keys(event)
   map_lsp('<leader>td', telescope.lsp_type_definitions, '[T]ype [D]efinition')
   map_lsp('<leader>ds', telescope.lsp_document_symbols, '[D]ocument [S]ymbols')
   map_lsp('<leader>ws', telescope.lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+  map_lsp('<leader>ic', telescope.lsp_incoming_calls, '[I]ncoming [C]alls')
+  map_lsp('<leader>oc', telescope.lsp_incoming_calls, '[O]utgoing [C]alls')
 
   map_lsp('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
   map_lsp('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')

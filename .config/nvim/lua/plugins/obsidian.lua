@@ -1,18 +1,18 @@
 local main_vault_path = '/mnt/SSD/obsidian-vault'
 
 -- Autoinsert template on note creation
-vim.api.nvim_create_augroup('ObsidianInsertTemplate', { clear = true })
 vim.api.nvim_create_autocmd('BufNewFile', {
   pattern = main_vault_path .. '/*.md',
+  group = vim.api.nvim_create_augroup('ObsidianInsertTemplate', { clear = true }),
   callback = function()
     vim.api.nvim_command 'ObsidianTemplate Template - Note'
   end,
 })
 
 -- Keymaps only for markdown files
-vim.api.nvim_create_augroup('ObsidianSpecificMappings', { clear = true })
 vim.api.nvim_create_autocmd('FileType', {
   pattern = 'markdown',
+  group = vim.api.nvim_create_augroup('ObsidianSpecificMappings', { clear = true }),
   callback = function()
     vim.api.nvim_buf_set_keymap(0, 'n', '<leader>ob', '<cmd>ObsidianBacklinks<CR>', { desc = '[O]bsidian [B]acklinks' })
     vim.api.nvim_buf_set_keymap(0, 'n', '<leader>ot', '<cmd>ObsidianTags<CR>', { desc = '[O]bsidian [T]ags' })
