@@ -1,5 +1,5 @@
 vim.api.nvim_create_autocmd('BufEnter', {
-  pattern = '*.ml',
+  pattern = { '*.ml', '*.mli' },
   group = vim.api.nvim_create_augroup('OCamlFormatting', { clear = true }),
   callback = function()
     print 'autcmd setting shiftwidth'

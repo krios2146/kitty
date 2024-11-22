@@ -20,4 +20,5 @@ return {
   },
   { 'nanotech/jellybeans.vim' },
   { 'rose-pine/neovim', name = 'rose-pine' },
+  { 'krios2146/1984.nvim' },
 }

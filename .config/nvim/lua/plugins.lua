@@ -7,6 +7,7 @@ return {
   { 'wakatime/vim-wakatime' }, -- Wakatime - time tracker
   { 'tpope/vim-fugitive' }, -- Git integration
   { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = { enabled = false } }, -- indentation guidelines
+  { 'rktjmp/lush.nvim' },
 
   -- Highlight todo, notes, etc. in the comments
   {
@@ -28,6 +29,13 @@ return {
   -- Different UI for the `vim.ui.input`
   {
     'stevearc/dressing.nvim',
+    opts = {},
+  },
+
+  -- markdown renderer
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
     opts = {},
   },
 }
