@@ -6,6 +6,7 @@ set NERDTree
 
 map <leader>so <Action>(RecentFiles)
 map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(FindInPath)
 map <leader>mp <Action>(ManageRecentProjects)
 map <leader>gi <Action>(VcsGroups)
 map <leader>d <Action>(ToggleLineBreakpoint)
